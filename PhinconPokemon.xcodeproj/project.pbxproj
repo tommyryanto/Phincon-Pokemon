@@ -9,23 +9,47 @@
 /* Begin PBXBuildFile section */
 		5E31401D2C19E8950002AE97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E31401C2C19E8950002AE97 /* AppDelegate.swift */; };
 		5E31401F2C19E8950002AE97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E31401E2C19E8950002AE97 /* SceneDelegate.swift */; };
-		5E3140212C19E8950002AE97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3140202C19E8950002AE97 /* ViewController.swift */; };
-		5E3140242C19E8950002AE97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3140222C19E8950002AE97 /* Main.storyboard */; };
 		5E3140272C19E8950002AE97 /* PhinconPokemon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E3140252C19E8950002AE97 /* PhinconPokemon.xcdatamodeld */; };
 		5E3140292C19E8970002AE97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E3140282C19E8970002AE97 /* Assets.xcassets */; };
 		5E31402C2C19E8970002AE97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E31402A2C19E8970002AE97 /* LaunchScreen.storyboard */; };
+		5E3140362C19E9BE0002AE97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3140342C19E9BE0002AE97 /* ViewController.swift */; };
+		5E3140372C19E9BE0002AE97 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E3140352C19E9BE0002AE97 /* ViewController.xib */; };
+		5E3140392C19EA830002AE97 /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3140382C19EA830002AE97 /* PokemonModel.swift */; };
+		5E31403B2C19EB2F0002AE97 /* ViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E31403A2C19EB2F0002AE97 /* ViewController+UITableView.swift */; };
+		5E3140432C19F3DF0002AE97 /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3140412C19F3DF0002AE97 /* PokemonTableViewCell.swift */; };
+		5E3140442C19F3DF0002AE97 /* PokemonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E3140422C19F3DF0002AE97 /* PokemonTableViewCell.xib */; };
+		5E3140472C19F62D0002AE97 /* PokemonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3140452C19F62D0002AE97 /* PokemonDetailViewController.swift */; };
+		5E3140482C19F62D0002AE97 /* PokemonDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E3140462C19F62D0002AE97 /* PokemonDetailViewController.xib */; };
+		5E31404A2C19F7BA0002AE97 /* PokemonDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3140492C19F7BA0002AE97 /* PokemonDetailModel.swift */; };
+		5E31404C2C19FE410002AE97 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E31404B2C19FE410002AE97 /* CoreData.framework */; };
+		5E3140542C19FFAD0002AE97 /* MyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3140522C19FFAD0002AE97 /* MyListViewController.swift */; };
+		5E3140552C19FFAD0002AE97 /* MyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E3140532C19FFAD0002AE97 /* MyListViewController.xib */; };
+		7C825541FF1158DC4CAE14DA /* Pods_PhinconPokemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF07930EE3966EE3D1D8E93 /* Pods_PhinconPokemon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E3140192C19E8950002AE97 /* PhinconPokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhinconPokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E31401C2C19E8950002AE97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E31401E2C19E8950002AE97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5E3140202C19E8950002AE97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5E3140232C19E8950002AE97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E3140262C19E8950002AE97 /* PhinconPokemon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhinconPokemon.xcdatamodel; sourceTree = "<group>"; };
 		5E3140282C19E8970002AE97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E31402B2C19E8970002AE97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E31402D2C19E8970002AE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E3140342C19E9BE0002AE97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E3140352C19E9BE0002AE97 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		5E3140382C19EA830002AE97 /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
+		5E31403A2C19EB2F0002AE97 /* ViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UITableView.swift"; sourceTree = "<group>"; };
+		5E3140412C19F3DF0002AE97 /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
+		5E3140422C19F3DF0002AE97 /* PokemonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonTableViewCell.xib; sourceTree = "<group>"; };
+		5E3140452C19F62D0002AE97 /* PokemonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewController.swift; sourceTree = "<group>"; };
+		5E3140462C19F62D0002AE97 /* PokemonDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonDetailViewController.xib; sourceTree = "<group>"; };
+		5E3140492C19F7BA0002AE97 /* PokemonDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailModel.swift; sourceTree = "<group>"; };
+		5E31404B2C19FE410002AE97 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5E3140522C19FFAD0002AE97 /* MyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewController.swift; sourceTree = "<group>"; };
+		5E3140532C19FFAD0002AE97 /* MyListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyListViewController.xib; sourceTree = "<group>"; };
+		6CCD8A3C1627C2157883E469 /* Pods-PhinconPokemon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhinconPokemon.debug.xcconfig"; path = "Target Support Files/Pods-PhinconPokemon/Pods-PhinconPokemon.debug.xcconfig"; sourceTree = "<group>"; };
+		7E5A8E0E689200529268C446 /* Pods-PhinconPokemon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhinconPokemon.release.xcconfig"; path = "Target Support Files/Pods-PhinconPokemon/Pods-PhinconPokemon.release.xcconfig"; sourceTree = "<group>"; };
+		FDF07930EE3966EE3D1D8E93 /* Pods_PhinconPokemon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhinconPokemon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E31404C2C19FE410002AE97 /* CoreData.framework in Frameworks */,
+				7C825541FF1158DC4CAE14DA /* Pods_PhinconPokemon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +70,8 @@
 			children = (
 				5E31401B2C19E8950002AE97 /* PhinconPokemon */,
 				5E31401A2C19E8950002AE97 /* Products */,
+				AAAFFF3C95A3A5A17A88DD1D /* Pods */,
+				EF852C202749E7270D636C76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +86,67 @@
 		5E31401B2C19E8950002AE97 /* PhinconPokemon */ = {
 			isa = PBXGroup;
 			children = (
+				5E3140502C19FF980002AE97 /* MyList */,
+				5E31403C2C19F1870002AE97 /* PokemonDetailView */,
 				5E31401C2C19E8950002AE97 /* AppDelegate.swift */,
 				5E31401E2C19E8950002AE97 /* SceneDelegate.swift */,
-				5E3140202C19E8950002AE97 /* ViewController.swift */,
-				5E3140222C19E8950002AE97 /* Main.storyboard */,
+				5E3140332C19E9A70002AE97 /* ViewController */,
 				5E3140282C19E8970002AE97 /* Assets.xcassets */,
 				5E31402A2C19E8970002AE97 /* LaunchScreen.storyboard */,
 				5E31402D2C19E8970002AE97 /* Info.plist */,
 				5E3140252C19E8950002AE97 /* PhinconPokemon.xcdatamodeld */,
 			);
 			path = PhinconPokemon;
+			sourceTree = "<group>";
+		};
+		5E3140332C19E9A70002AE97 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5E3140342C19E9BE0002AE97 /* ViewController.swift */,
+				5E3140352C19E9BE0002AE97 /* ViewController.xib */,
+				5E3140382C19EA830002AE97 /* PokemonModel.swift */,
+				5E31403A2C19EB2F0002AE97 /* ViewController+UITableView.swift */,
+				5E3140412C19F3DF0002AE97 /* PokemonTableViewCell.swift */,
+				5E3140422C19F3DF0002AE97 /* PokemonTableViewCell.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5E31403C2C19F1870002AE97 /* PokemonDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				5E3140452C19F62D0002AE97 /* PokemonDetailViewController.swift */,
+				5E3140462C19F62D0002AE97 /* PokemonDetailViewController.xib */,
+				5E3140492C19F7BA0002AE97 /* PokemonDetailModel.swift */,
+			);
+			path = PokemonDetailView;
+			sourceTree = "<group>";
+		};
+		5E3140502C19FF980002AE97 /* MyList */ = {
+			isa = PBXGroup;
+			children = (
+				5E3140522C19FFAD0002AE97 /* MyListViewController.swift */,
+				5E3140532C19FFAD0002AE97 /* MyListViewController.xib */,
+			);
+			path = MyList;
+			sourceTree = "<group>";
+		};
+		AAAFFF3C95A3A5A17A88DD1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CCD8A3C1627C2157883E469 /* Pods-PhinconPokemon.debug.xcconfig */,
+				7E5A8E0E689200529268C446 /* Pods-PhinconPokemon.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF852C202749E7270D636C76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E31404B2C19FE410002AE97 /* CoreData.framework */,
+				FDF07930EE3966EE3D1D8E93 /* Pods_PhinconPokemon.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E3140302C19E8970002AE97 /* Build configuration list for PBXNativeTarget "PhinconPokemon" */;
 			buildPhases = (
+				46E2ED2A754FD8C5EF34164B /* [CP] Check Pods Manifest.lock */,
 				5E3140152C19E8950002AE97 /* Sources */,
 				5E3140162C19E8950002AE97 /* Frameworks */,
 				5E3140172C19E8950002AE97 /* Resources */,
+				F447ED3C6126AEDD8EB56A36 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,22 +209,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E3140552C19FFAD0002AE97 /* MyListViewController.xib in Resources */,
 				5E31402C2C19E8970002AE97 /* LaunchScreen.storyboard in Resources */,
+				5E3140442C19F3DF0002AE97 /* PokemonTableViewCell.xib in Resources */,
+				5E3140372C19E9BE0002AE97 /* ViewController.xib in Resources */,
 				5E3140292C19E8970002AE97 /* Assets.xcassets in Resources */,
-				5E3140242C19E8950002AE97 /* Main.storyboard in Resources */,
+				5E3140482C19F62D0002AE97 /* PokemonDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46E2ED2A754FD8C5EF34164B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhinconPokemon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F447ED3C6126AEDD8EB56A36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhinconPokemon/Pods-PhinconPokemon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhinconPokemon/Pods-PhinconPokemon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhinconPokemon/Pods-PhinconPokemon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5E3140152C19E8950002AE97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E3140212C19E8950002AE97 /* ViewController.swift in Sources */,
 				5E31401D2C19E8950002AE97 /* AppDelegate.swift in Sources */,
+				5E3140432C19F3DF0002AE97 /* PokemonTableViewCell.swift in Sources */,
+				5E3140542C19FFAD0002AE97 /* MyListViewController.swift in Sources */,
 				5E31401F2C19E8950002AE97 /* SceneDelegate.swift in Sources */,
+				5E31403B2C19EB2F0002AE97 /* ViewController+UITableView.swift in Sources */,
+				5E3140362C19E9BE0002AE97 /* ViewController.swift in Sources */,
+				5E31404A2C19F7BA0002AE97 /* PokemonDetailModel.swift in Sources */,
+				5E3140472C19F62D0002AE97 /* PokemonDetailViewController.swift in Sources */,
+				5E3140392C19EA830002AE97 /* PokemonModel.swift in Sources */,
 				5E3140272C19E8950002AE97 /* PhinconPokemon.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +283,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5E3140222C19E8950002AE97 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E3140232C19E8950002AE97 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5E31402A2C19E8970002AE97 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,17 +415,19 @@
 		};
 		5E3140312C19E8970002AE97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CCD8A3C1627C2157883E469 /* Pods-PhinconPokemon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A3BT7HNG4S;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhinconPokemon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,17 +445,19 @@
 		};
 		5E3140322C19E8970002AE97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E5A8E0E689200529268C446 /* Pods-PhinconPokemon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A3BT7HNG4S;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhinconPokemon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
