@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Home"
         addRightBarButton()
         // Do any additional setup after loading the view.
         tableView.dataSource = self
@@ -37,16 +38,14 @@ class ViewController: UIViewController {
     private func callAPI() {
         let url = "https://pokeapi.co/api/v2/pokemon"
 
-        AF.request(url, method: .get).responseDecodable(of: PokemonResponse.self) { response in
-            switch response.result {
-            case .success(let pokemonResponse):
-                self.pokemonReponse = pokemonResponse
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-            case .failure(let error):
-                print(error.localizedDescription)
+        APIHelper.getAPIWithCodable(url: url, type: PokemonResponse.self) { pokemonResponse in
+            self.pokemonReponse = pokemonResponse
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
             }
+        } didFail: { error in
+            print(error.localizedDescription)
+            
         }
     }
 }

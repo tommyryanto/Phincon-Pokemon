@@ -23,190 +23,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1803033D-222F-4ED8-9969-E4081B7D016D"
+            uuid = "353960E0-4334-4984-A02A-E1C5A2EB29FE"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PhinconPokemon/PokemonDetailView/PokemonDetailViewController.swift"
+            filePath = "PhinconPokemon/MyList/MyListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "callAPI()"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getMyList()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "1803033D-222F-4ED8-9969-E4081B7D016D - d83b746164acae3e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PhinconPokemon.PokemonDetailViewController.callAPI() -&gt; ()"
-                  moduleName = "PhinconPokemon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/klikdokter/Documents/PhinconPokemon/PhinconPokemon/PokemonDetailView/PokemonDetailViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  uuid = "1803033D-222F-4ED8-9969-E4081B7D016D - a08d0e77a1cebd71"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;PhinconPokemon.PokemonDetail, Alamofire.AFError&gt;) -&gt; () in PhinconPokemon.PokemonDetailViewController.callAPI() -&gt; ()"
-                  moduleName = "PhinconPokemon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/klikdokter/Documents/PhinconPokemon/PhinconPokemon/PokemonDetailView/PokemonDetailViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "392">
-               </Location>
-               <Location
-                  uuid = "1803033D-222F-4ED8-9969-E4081B7D016D - d83b746164acae19"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PhinconPokemon.PokemonDetailViewController.callAPI() -&gt; ()"
-                  moduleName = "PhinconPokemon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/klikdokter/Documents/PhinconPokemon/PhinconPokemon/PokemonDetailView/PokemonDetailViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  uuid = "1803033D-222F-4ED8-9969-E4081B7D016D - a08d0e77a1cebd90"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;PhinconPokemon.PokemonDetail, Alamofire.AFError&gt;) -&gt; () in PhinconPokemon.PokemonDetailViewController.callAPI() -&gt; ()"
-                  moduleName = "PhinconPokemon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/klikdokter/Documents/PhinconPokemon/PhinconPokemon/PokemonDetailView/PokemonDetailViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "340">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BD43CC14-59F1-4ADB-B45F-9DB985535D3F"
+            uuid = "67380C4B-6118-4ECF-BCC8-0C941A441A03"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PhinconPokemon/PokemonDetailView/PokemonDetailViewController.swift"
+            filePath = "PhinconPokemon/MyList/MyListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "callAPI()"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "getMyList()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BD43CC14-59F1-4ADB-B45F-9DB985535D3F - a08d0e77a1cebd1c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;PhinconPokemon.PokemonDetail, Alamofire.AFError&gt;) -&gt; () in PhinconPokemon.PokemonDetailViewController.callAPI() -&gt; ()"
-                  moduleName = "PhinconPokemon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/klikdokter/Documents/PhinconPokemon/PhinconPokemon/PokemonDetailView/PokemonDetailViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "748">
-               </Location>
-               <Location
-                  uuid = "BD43CC14-59F1-4ADB-B45F-9DB985535D3F - fee661fb9f0a6bfb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Alamofire.DataResponse&lt;PhinconPokemon.PokemonDetail, Alamofire.AFError&gt;) -&gt; () in PhinconPokemon.PokemonDetailViewController.callAPI() -&gt; ()"
-                  moduleName = "PhinconPokemon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/klikdokter/Documents/PhinconPokemon/PhinconPokemon/PokemonDetailView/PokemonDetailViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "32">
-               </Location>
-               <Location
-                  uuid = "BD43CC14-59F1-4ADB-B45F-9DB985535D3F - fee661fb9f0a681a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Alamofire.DataResponse&lt;PhinconPokemon.PokemonDetail, Alamofire.AFError&gt;) -&gt; () in PhinconPokemon.PokemonDetailViewController.callAPI() -&gt; ()"
-                  moduleName = "PhinconPokemon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/klikdokter/Documents/PhinconPokemon/PhinconPokemon/PokemonDetailView/PokemonDetailViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8D923971-95C7-4A46-A318-9422BE434773"
+            uuid = "E1C27AB9-E3D4-472C-85F5-17305B70B425"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PhinconPokemon/PokemonDetailView/PokemonDetailViewController.swift"
+            filePath = "PhinconPokemon/MyList/MyListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "callAPI()"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getMyList()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "8D923971-95C7-4A46-A318-9422BE434773 - a08d0e77a1cebebf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;PhinconPokemon.PokemonDetail, Alamofire.AFError&gt;) -&gt; () in PhinconPokemon.PokemonDetailViewController.callAPI() -&gt; ()"
-                  moduleName = "PhinconPokemon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/klikdokter/Documents/PhinconPokemon/PhinconPokemon/PokemonDetailView/PokemonDetailViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "1124">
-               </Location>
-               <Location
-                  uuid = "8D923971-95C7-4A46-A318-9422BE434773 - a08d0e77a1cebebf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;PhinconPokemon.PokemonDetail, Alamofire.AFError&gt;) -&gt; () in PhinconPokemon.PokemonDetailViewController.callAPI() -&gt; ()"
-                  moduleName = "PhinconPokemon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/klikdokter/Documents/PhinconPokemon/PhinconPokemon/PokemonDetailView/PokemonDetailViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "808">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

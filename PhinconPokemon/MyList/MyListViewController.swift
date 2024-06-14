@@ -6,138 +6,84 @@
 //
 
 import UIKit
-import CoreData
+import Alamofire
 
 class MyListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var result: [Entity] = []
+//    var result: [Entity] = []
+    var result: [MyListModel] = []
     var pokemons: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "My Pokemon List"
         tableView.dataSource = self
         tableView.delegate = self
-        getCoreData()
+        
+        tableView.register(UINib(nibName: "MyListTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        
+        getMyList()
     }
-
-    private func getCoreData() {
-        pokemons.removeAll()
+    
+    private func getMyList() {
         result.removeAll()
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let managedObjectContext = appDelegate.persistentContainer.viewContext
-        let fetchRequest: NSFetchRequest<Entity> = Entity.fetchRequest()
-//        let predicate = NSPredicate()
-//        fetchRequest.predicate = predicate
-        do {
-            let results = try managedObjectContext.fetch(fetchRequest)
-            
-            self.result = results
-            for result in results {
-                // Akses nilai dari setiap objek hasil
-                self.pokemons.append(result.pokemonNickname ?? "")
+        pokemons.removeAll()
+        
+        let url = "\(Global.FIREBASE_URL)/pokemon.json"
+
+        APIHelper.getAPI(url: url) { value in
+            if let jsonData = value as? [String: Any] {
+                // Akses data JSON di sini
+                print(jsonData)
+                for (key, value) in jsonData {
+                    let valueDict = value as? [String: String]
+                    self.pokemons.append(valueDict?["name"] ?? "")
+                    self.result.append(MyListModel(key: key, pokemon: valueDict?["name"] ?? "", imageURL: valueDict?["imageURL"] ?? "", detailURL: valueDict?["detailURL"] ?? ""))
+                }
             }
-            
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-        } catch {
-            print("Error fetching data: \(error)")
+        } didFail: { error in
+            print("Error: \(error.localizedDescription)")
         }
 
     }
     
-}
-
-extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pokemons.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellIdentifier = "DefaultCell"
-        let cell = UITableViewCell(style: .default, reuseIdentifier: cellIdentifier)
+    func editPokemon(row: Int, name: String) {
+        let key = result[row].key
+        let url = "\(Global.FIREBASE_URL)/pokemon/\(key).json"
         
-        cell.selectionStyle = .none
+        let imageURL = result[row].imageURL
+        let parameters: [String: Any] = [
+            "name": name,
+            "imageURL": imageURL
+        ]
         
-        // Konfigurasikan cell
-        cell.textLabel?.text = pokemons[indexPath.row]
-        
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let alert = UIAlertController(title: "Edit Nama", message: nil, preferredStyle: .alert)
-
-        alert.addTextField { (textField) in
-            textField.text = self.pokemons[indexPath.row] // Set nilai awal dari nama yang ingin diubah
-        }
-        
-        let ubahAction = UIAlertAction(title: "Ubah", style: .default) { (_) in
-            if let namaField = alert.textFields?.first, let namaBaru = namaField.text {
-                // Kode untuk mengubah nama di Core Data
-                self.updateNamaInCoreData(namaBaru, beforeName: self.pokemons[indexPath.row])
-            }
-        }
-
-        let batalAction = UIAlertAction(title: "Batal", style: .cancel, handler: nil)
-
-        alert.addAction(ubahAction)
-        alert.addAction(batalAction)
-        present(alert, animated: true, completion: nil)
-
-    }
-    
-    func updateNamaInCoreData(_ namaBaru: String, beforeName: String) {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
-        
-        let fetchRequest: NSFetchRequest<Entity> = Entity.fetchRequest() // Ganti Entity dengan nama entitas Anda
-        
-        // Tambahkan predicate jika diperlukan untuk memfilter entitas yang ingin diubah
-         fetchRequest.predicate = NSPredicate(format: "pokemonNickname == %@", beforeName)
-        
-        do {
-            let results = try context.fetch(fetchRequest)
-            
-            if let entityToUpdate = results.first { // Mengasumsikan hanya ada satu entitas yang diubah
-                entityToUpdate.setValue(namaBaru, forKey: "pokemonNickname") // Ganti namaAtribut dengan nama atribut yang menyimpan nama
-                
-                try context.save()
-                print("Nama berhasil diubah")
-                
-                DispatchQueue.main.async {
-                    self.getCoreData()
-                }
-            }
-        } catch {
-            print("Error fetching data: \(error)")
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            self.deleteEntity(self.result[indexPath.row])
-        }
-    }
-    
-    func deleteEntity(_ entity: Entity) {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let managedContext = appDelegate.persistentContainer.viewContext
-        
-        managedContext.delete(entity)
-        
-        do {
-            try managedContext.save()
-            print("Entitas berhasil dihapus")
+        APIHelper.putAPI(url: url, parameters: parameters) {
+            print("Data berhasil diupdate")
             DispatchQueue.main.async {
-                self.getCoreData()
+                self.getMyList()
             }
-        } catch let error as NSError {
-            print("Tidak dapat menghapus entitas. \(error), \(error.userInfo)")
+        } didError: { error in
+            print("Error updating data: \(error.localizedDescription)")
         }
     }
-
-
+    
+    func deletePokemon(row: Int) {
+        let key = result[row].key
+        let url = "\(Global.FIREBASE_URL)/pokemon/\(key).json"
+        
+        APIHelper.deleteAPI(url: url) {
+            print("Data berhasil dihapus")
+            DispatchQueue.main.async {
+                self.getMyList()
+            }
+        } didError: { error in
+            print("Error deleting data: \(error.localizedDescription)")
+        }
+    }
+    
 }

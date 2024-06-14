@@ -24,6 +24,16 @@
 		5E31404C2C19FE410002AE97 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E31404B2C19FE410002AE97 /* CoreData.framework */; };
 		5E3140542C19FFAD0002AE97 /* MyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3140522C19FFAD0002AE97 /* MyListViewController.swift */; };
 		5E3140552C19FFAD0002AE97 /* MyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E3140532C19FFAD0002AE97 /* MyListViewController.xib */; };
+		5E3140572C1AF26C0002AE97 /* MyListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3140562C1AF26C0002AE97 /* MyListModel.swift */; };
+		5E31405A2C1AF3920002AE97 /* MyListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3140582C1AF3910002AE97 /* MyListTableViewCell.swift */; };
+		5E31405B2C1AF3920002AE97 /* MyListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E3140592C1AF3920002AE97 /* MyListTableViewCell.xib */; };
+		5E31405E2C1B04BE0002AE97 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E31405D2C1B04BE0002AE97 /* APIHelper.swift */; };
+		5E3140602C1B066D0002AE97 /* MyListViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E31405F2C1B066D0002AE97 /* MyListViewController+UITableView.swift */; };
+		5E3140622C1BEBF10002AE97 /* IntegerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3140612C1BEBF10002AE97 /* IntegerHelper.swift */; };
+		5E3140642C1BECC60002AE97 /* ViewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3140632C1BECC60002AE97 /* ViewControllerHelper.swift */; };
+		5E3140662C1BF0080002AE97 /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3140652C1BF0080002AE97 /* StringHelper.swift */; };
+		5E3140682C1BF82D0002AE97 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3140672C1BF82D0002AE97 /* Global.swift */; };
+		5E31406A2C1BFF8D0002AE97 /* PokemonDetailViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3140692C1BFF8D0002AE97 /* PokemonDetailViewController+UITableView.swift */; };
 		7C825541FF1158DC4CAE14DA /* Pods_PhinconPokemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF07930EE3966EE3D1D8E93 /* Pods_PhinconPokemon.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +57,16 @@
 		5E31404B2C19FE410002AE97 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		5E3140522C19FFAD0002AE97 /* MyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewController.swift; sourceTree = "<group>"; };
 		5E3140532C19FFAD0002AE97 /* MyListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyListViewController.xib; sourceTree = "<group>"; };
+		5E3140562C1AF26C0002AE97 /* MyListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListModel.swift; sourceTree = "<group>"; };
+		5E3140582C1AF3910002AE97 /* MyListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListTableViewCell.swift; sourceTree = "<group>"; };
+		5E3140592C1AF3920002AE97 /* MyListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyListTableViewCell.xib; sourceTree = "<group>"; };
+		5E31405D2C1B04BE0002AE97 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		5E31405F2C1B066D0002AE97 /* MyListViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyListViewController+UITableView.swift"; sourceTree = "<group>"; };
+		5E3140612C1BEBF10002AE97 /* IntegerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerHelper.swift; sourceTree = "<group>"; };
+		5E3140632C1BECC60002AE97 /* ViewControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHelper.swift; sourceTree = "<group>"; };
+		5E3140652C1BF0080002AE97 /* StringHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelper.swift; sourceTree = "<group>"; };
+		5E3140672C1BF82D0002AE97 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		5E3140692C1BFF8D0002AE97 /* PokemonDetailViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PokemonDetailViewController+UITableView.swift"; sourceTree = "<group>"; };
 		6CCD8A3C1627C2157883E469 /* Pods-PhinconPokemon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhinconPokemon.debug.xcconfig"; path = "Target Support Files/Pods-PhinconPokemon/Pods-PhinconPokemon.debug.xcconfig"; sourceTree = "<group>"; };
 		7E5A8E0E689200529268C446 /* Pods-PhinconPokemon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhinconPokemon.release.xcconfig"; path = "Target Support Files/Pods-PhinconPokemon/Pods-PhinconPokemon.release.xcconfig"; sourceTree = "<group>"; };
 		FDF07930EE3966EE3D1D8E93 /* Pods_PhinconPokemon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhinconPokemon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +106,7 @@
 		5E31401B2C19E8950002AE97 /* PhinconPokemon */ = {
 			isa = PBXGroup;
 			children = (
+				5E31405C2C1B04AF0002AE97 /* Helper */,
 				5E3140502C19FF980002AE97 /* MyList */,
 				5E31403C2C19F1870002AE97 /* PokemonDetailView */,
 				5E31401C2C19E8950002AE97 /* AppDelegate.swift */,
@@ -118,6 +139,7 @@
 				5E3140452C19F62D0002AE97 /* PokemonDetailViewController.swift */,
 				5E3140462C19F62D0002AE97 /* PokemonDetailViewController.xib */,
 				5E3140492C19F7BA0002AE97 /* PokemonDetailModel.swift */,
+				5E3140692C1BFF8D0002AE97 /* PokemonDetailViewController+UITableView.swift */,
 			);
 			path = PokemonDetailView;
 			sourceTree = "<group>";
@@ -126,9 +148,25 @@
 			isa = PBXGroup;
 			children = (
 				5E3140522C19FFAD0002AE97 /* MyListViewController.swift */,
+				5E31405F2C1B066D0002AE97 /* MyListViewController+UITableView.swift */,
 				5E3140532C19FFAD0002AE97 /* MyListViewController.xib */,
+				5E3140562C1AF26C0002AE97 /* MyListModel.swift */,
+				5E3140582C1AF3910002AE97 /* MyListTableViewCell.swift */,
+				5E3140592C1AF3920002AE97 /* MyListTableViewCell.xib */,
 			);
 			path = MyList;
+			sourceTree = "<group>";
+		};
+		5E31405C2C1B04AF0002AE97 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5E31405D2C1B04BE0002AE97 /* APIHelper.swift */,
+				5E3140612C1BEBF10002AE97 /* IntegerHelper.swift */,
+				5E3140632C1BECC60002AE97 /* ViewControllerHelper.swift */,
+				5E3140652C1BF0080002AE97 /* StringHelper.swift */,
+				5E3140672C1BF82D0002AE97 /* Global.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		AAAFFF3C95A3A5A17A88DD1D /* Pods */ = {
@@ -210,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E3140552C19FFAD0002AE97 /* MyListViewController.xib in Resources */,
+				5E31405B2C1AF3920002AE97 /* MyListTableViewCell.xib in Resources */,
 				5E31402C2C19E8970002AE97 /* LaunchScreen.storyboard in Resources */,
 				5E3140442C19F3DF0002AE97 /* PokemonTableViewCell.xib in Resources */,
 				5E3140372C19E9BE0002AE97 /* ViewController.xib in Resources */,
@@ -271,10 +310,19 @@
 				5E3140432C19F3DF0002AE97 /* PokemonTableViewCell.swift in Sources */,
 				5E3140542C19FFAD0002AE97 /* MyListViewController.swift in Sources */,
 				5E31401F2C19E8950002AE97 /* SceneDelegate.swift in Sources */,
+				5E3140642C1BECC60002AE97 /* ViewControllerHelper.swift in Sources */,
+				5E31406A2C1BFF8D0002AE97 /* PokemonDetailViewController+UITableView.swift in Sources */,
+				5E3140602C1B066D0002AE97 /* MyListViewController+UITableView.swift in Sources */,
+				5E3140622C1BEBF10002AE97 /* IntegerHelper.swift in Sources */,
 				5E31403B2C19EB2F0002AE97 /* ViewController+UITableView.swift in Sources */,
+				5E3140682C1BF82D0002AE97 /* Global.swift in Sources */,
+				5E3140662C1BF0080002AE97 /* StringHelper.swift in Sources */,
+				5E31405A2C1AF3920002AE97 /* MyListTableViewCell.swift in Sources */,
 				5E3140362C19E9BE0002AE97 /* ViewController.swift in Sources */,
 				5E31404A2C19F7BA0002AE97 /* PokemonDetailModel.swift in Sources */,
+				5E3140572C1AF26C0002AE97 /* MyListModel.swift in Sources */,
 				5E3140472C19F62D0002AE97 /* PokemonDetailViewController.swift in Sources */,
+				5E31405E2C1B04BE0002AE97 /* APIHelper.swift in Sources */,
 				5E3140392C19EA830002AE97 /* PokemonModel.swift in Sources */,
 				5E3140272C19E8950002AE97 /* PhinconPokemon.xcdatamodeld in Sources */,
 			);
